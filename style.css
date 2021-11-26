@@ -1,0 +1,125 @@
+:root{
+    /* Primary */
+ --Pale-blue: hsl(225, 100%, 94%);
+ --Bright-blue: hsl(245, 75%, 52%);
+ /* Neutral */
+ --Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    background-image: url(./images/pattern-background-desktop.svg); 
+    background-repeat: no-repeat;
+    background-color: var(--Pale-blue);
+    background-size: 100% 50%;
+  
+}
+
+.container-card{
+    background: white;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    margin:20px auto;
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px var(--Desaturated-blue);
+    
+}
+.container-card img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.container-card div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.container-card div h1{
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-weight: 900;
+    color: var(--Dark-blue);
+}
+.container-card div p {
+  text-align: center;
+  font-size: smaller;
+  line-height: 20px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  color: var(--Desaturated-blue);
+}
+.section-two{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--Very-pale-blue);
+    margin: 10px 30px 30px;
+    border-radius: 10px;
+}
+.figure{
+    display: flex;
+    align-items: center;
+    margin:0;
+
+}
+.figure img{
+    margin: 10px 10px 20px 0px;
+    width: 35px;
+    height: 35px;
+
+}
+.figure-container{
+    margin-left: 10px;
+}
+.section-two div p:nth-child(1){
+    color:var(--Dark-blue);
+    font-weight: 900;
+    margin-top: 0;
+}
+.section-two div p:nth-child(2){
+    font-size: 16px;
+    margin-top: 5px;
+    align-self: flex-start;
+}
+
+.section-two a{
+    color: var(--Bright-blue);
+    font-size: x-small;
+    font-weight: 900;
+    margin: 35px 10px 30px 40px;
+}
+
+.button-one{
+    background: var(--Bright-blue);
+    width: 300px;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-inline: auto;
+    box-shadow: 2px 4px 10px 4px var(--Pale-blue);
+    font-weight: bold;
+}
+.button-two {
+    background: none;
+    border: none;
+    margin: 20px;
+    font-weight: bold;
+    color:var(--Desaturated-blue);
+}
+
+.attribution {
+   font-size: 11px;
+   text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
